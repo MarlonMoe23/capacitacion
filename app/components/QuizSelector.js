@@ -5,20 +5,26 @@ export default function QuizSelector({ user, onQuizSelect, onBack }) {
   const [availableQuizzes, setAvailableQuizzes] = useState([])
 
   useEffect(() => {
-    // Lista de quizzes disponibles (puedes agregar más aquí)
+   
+
+
+ // Lista de quizzes disponibles (puedes agregar más aquí)
     const quizzes = [
-      {
-        id: 'seguridad',
-        file: '/data/ejemplo-quiz.json',
-        titulo: 'Capacitación de Seguridad Básica',
-        descripcion: 'Conocimientos fundamentales de seguridad laboral'
-      },
-      {
-        id: 'higiene',
-        file: '/data/capacitacion-higiene.json',
-        titulo: 'Capacitación de Higiene y Sanidad',
-        descripcion: 'Procedimientos de higiene en el trabajo'
-      }
+
+{
+  id: 'corshield',
+  file: '/data/capacitacion-corshield.json',
+  titulo: 'Capacitación CorShield VpCl 368',
+  descripcion: 'Uso correcto del inhibidor de corrosión extremo'
+},
+
+
+
+
+
+
+
+
     ]
     setAvailableQuizzes(quizzes)
   }, [])

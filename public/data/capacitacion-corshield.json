@@ -1,0 +1,116 @@
+{
+  "titulo": "Capacitación CorShield VpCl 368 - Inhibidor de Corrosión",
+  "descripcion": "Evaluación sobre el uso correcto del inhibidor de corrosión CorShield VpCl 368",
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "¿Cuáles son los 3 equipos de protección personal obligatorios para usar CorShield?",
+      "opciones": [
+        "Casco, chaleco y botas",
+        "Guantes, gafas y mascarilla",
+        "Overol, casco y guantes",
+        "Mascarilla, botas y chaleco"
+      ],
+      "correcta": 1
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Cuál es el rango de temperatura ideal para aplicar CorShield VpCl 368?",
+      "opciones": [
+        "5°C a 25°C",
+        "15°C a 40°C",
+        "10°C a 35°C",
+        "0°C a 30°C"
+      ],
+      "correcta": 2
+    },
+    {
+      "id": 3,
+      "pregunta": "Antes de aplicar CorShield, ¿qué debe hacerse con la superficie?",
+      "opciones": [
+        "Solo limpiar con agua",
+        "Aplicar directamente sin preparación",
+        "Limpiar eliminando óxido, grasa y contaminantes, y asegurar que esté seca",
+        "Solo eliminar el óxido visible"
+      ],
+      "correcta": 2
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Qué significa VpCI en la tecnología CorShield?",
+      "opciones": [
+        "Vapor de Protección Continua Internacional",
+        "Inhibidor de Corrosión por Vapor",
+        "Vapor de Protección Contra Impactos",
+        "Inhibidor de Vapor Químico Industrial"
+      ],
+      "correcta": 1
+    },
+    {
+      "id": 5,
+      "pregunta": "¿Cuál es la forma correcta de aplicar CorShield?",
+      "opciones": [
+        "Una capa gruesa para mayor protección",
+        "Aplicar sin agitar el envase",
+        "Capas delgadas y uniformes, dejando secar cada una completamente",
+        "Aplicar solo una capa y listo"
+      ],
+      "correcta": 2
+    },
+    {
+      "id": 6,
+      "pregunta": "¿En cuál de estos casos NO se debe usar CorShield VpCl 368?",
+      "opciones": [
+        "Protección de repuestos al aire libre",
+        "Recubrimiento de equipos eléctricos energizados",
+        "Preservación de motores en almacenamiento",
+        "Protección de tuberías durante transporte"
+      ],
+      "correcta": 1
+    },
+    {
+      "id": 7,
+      "pregunta": "¿Qué tipo de película forma CorShield sobre la superficie?",
+      "opciones": [
+        "Película líquida permanente",
+        "Película cerosa resistente al agua",
+        "Película plástica rígida",
+        "Película metálica conductora"
+      ],
+      "correcta": 1
+    },
+    {
+      "id": 8,
+      "pregunta": "¿Por qué es importante mantener el área bien ventilada durante la aplicación?",
+      "opciones": [
+        "Para que seque más rápido",
+        "Para evitar acumulación de vapores",
+        "Para mejor adherencia del producto",
+        "Para mantener la temperatura adecuada"
+      ],
+      "correcta": 1
+    },
+    {
+      "id": 9,
+      "pregunta": "¿Cuál es una ventaja clave de la tecnología VpCI?",
+      "opciones": [
+        "Solo protege superficies visibles",
+        "Protege incluso zonas difíciles de alcanzar",
+        "Requiere contacto directo para funcionar",
+        "Solo funciona en ambientes secos"
+      ],
+      "correcta": 1
+    },
+    {
+      "id": 10,
+      "pregunta": "¿En cuál de estas situaciones es MÁS recomendable usar CorShield en Toachi Pilatón?",
+      "opciones": [
+        "Limpieza regular de oficinas",
+        "Protección de equipos durante paradas prolongadas",
+        "Lubricación de motores en funcionamiento",
+        "Pintura decorativa de paredes"
+      ],
+      "correcta": 1
+    }
+  ]
+}

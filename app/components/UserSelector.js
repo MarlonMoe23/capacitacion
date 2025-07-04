@@ -2,14 +2,22 @@
 import { useState } from 'react'
 
 const USUARIOS = [
-  'Ana García',
-  'Carlos López',
-  'María Rodríguez',
-  'José Martínez',
-  'Laura Fernández',
-  'Diego Silva',
-  'Carmen Torres',
-  'Roberto Jiménez'
+  'Alex Haro',
+  'Angelo Porras',
+  'Carlos Cisneros',
+  'Cesar Sanchez',
+  'Cristian Lara',
+  'Dario Ojeda',
+  'Edgar Ormaza',
+  'Edisson Bejarano',
+  'Israel Perez',
+  'Jose Urquizo',
+  'Juan Carrion',
+  'Kevin Vargas',
+  'Leonardo Ballesteros',
+  'Marlon Ortiz',
+  'Miguel Lozada',
+  'Roberto Cordova'
 ]
 
 export default function UserSelector({ onUserSelect }) {

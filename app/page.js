@@ -47,9 +47,12 @@ useEffect(() => {
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-2xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
-          Sistema de Capacitación
+          Capacitación Mantenimiento Mecánico
         </h1>
-        
+<p className="text-center text-gray-600 mb-8 text-lg font-medium">
+          🚀 El que aprende, lidera. Y el equipo que se capacita, avanza más rápido.
+</p>        
+
         {isLoading ? (
   <div className="bg-white rounded-lg shadow-md p-6">
     <p className="text-center text-gray-600">Cargando...</p>
