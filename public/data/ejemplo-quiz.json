@@ -1,0 +1,28 @@
+{
+  "titulo": "Capacitación de Seguridad Básica",
+  "descripcion": "Evaluación de conocimientos básicos de seguridad laboral",
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "¿Cuál es la primera acción ante una emergencia?",
+      "opciones": [
+        "Llamar al supervisor",
+        "Mantener la calma y evaluar la situación",
+        "Abandonar inmediatamente el área",
+        "Buscar ayuda de compañeros"
+      ],
+      "correcta": 1
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Con qué frecuencia se debe revisar el equipo de seguridad?",
+      "opciones": [
+        "Una vez al mes",
+        "Antes de cada uso",
+        "Una vez por semana",
+        "Solo cuando se daña"
+      ],
+      "correcta": 1
+    }
+  ]
+}

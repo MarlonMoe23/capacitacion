@@ -1,0 +1,39 @@
+{
+  "titulo": "Capacitación de Higiene y Sanidad",
+  "descripcion": "Evaluación de conocimientos básicos de higiene en el trabajo",
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "¿Con qué frecuencia se debe lavar las manos durante el trabajo?",
+      "opciones": [
+        "Al inicio y final del turno solamente",
+        "Cada hora",
+        "Antes y después de cada tarea",
+        "Solo cuando están visiblemente sucias"
+      ],
+      "correcta": 2
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Cuál es la temperatura correcta para lavar las manos?",
+      "opciones": [
+        "Agua fría",
+        "Agua tibia",
+        "Agua muy caliente",
+        "No importa la temperatura"
+      ],
+      "correcta": 1
+    },
+    {
+      "id": 3,
+      "pregunta": "¿Qué hacer si se derrama líquido en el área de trabajo?",
+      "opciones": [
+        "Dejarlo para que se seque solo",
+        "Limpiarlo inmediatamente",
+        "Poner un aviso y seguir trabajando",
+        "Esperar a que termine el turno"
+      ],
+      "correcta": 1
+    }
+  ]
+}
