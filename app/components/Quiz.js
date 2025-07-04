@@ -64,6 +64,14 @@ useEffect(() => {
     window.open(url, '_blank')
   }
 
+const restartQuiz = () => {
+  setCurrentQuestion(0)
+  setSelectedAnswers(new Array(quizData.preguntas.length).fill(null))
+  setShowResult(false)
+  setScore(0)
+}
+
+
   if (!quizData) {
     return (
       <div className="bg-white rounded-lg shadow-md p-6">
@@ -72,38 +80,73 @@ useEffect(() => {
     )
   }
 
-  if (showResult) {
-    return (
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
-          ¡Quiz Completado!
-        </h2>
-        <div className="text-center mb-6">
-          <div className="text-4xl font-bold text-blue-600 mb-2">
-            {score}%
-          </div>
-          <p className="text-gray-600">
-            Respondiste correctamente {selectedAnswers.filter((answer, index) => answer === quizData.preguntas[index].correcta).length} de {quizData.preguntas.length} preguntas
-          </p>
+ if (showResult) {
+  const passed = score >= 80
+  
+  return (
+    <div className="bg-white rounded-lg shadow-md p-6">
+      <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
+        ¡Quiz Completado!
+      </h2>
+      <div className="text-center mb-6">
+        <div className={`text-4xl font-bold mb-2 ${passed ? 'text-green-600' : 'text-red-600'}`}>
+          {score}%
         </div>
+        <p className="text-gray-600 mb-4">
+          Respondiste correctamente {selectedAnswers.filter((answer, index) => answer === quizData.preguntas[index].correcta).length} de {quizData.preguntas.length} preguntas
+        </p>
         
-        <div className="flex gap-4 justify-center">
-          <button 
-            onClick={shareOnWhatsApp}
-            className="bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-medium"
-          >
-            📱 Compartir Constancia
-          </button>
-          <button 
-            onClick={() => onQuizComplete()}
-            className="bg-gray-600 text-white py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors font-medium"
-          >
-            Nuevo Quiz
-          </button>
-        </div>
+        {passed ? (
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
+            <p className="text-green-800 font-medium">
+              ¡Felicitaciones! Has aprobado la capacitación
+            </p>
+          </div>
+        ) : (
+          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
+            <p className="text-red-800 font-medium">
+              Necesitas al menos 80% para aprobar. ¡Inténtalo de nuevo!
+            </p>
+          </div>
+        )}
       </div>
-    )
-  }
+      
+      <div className="flex gap-4 justify-center">
+        {passed ? (
+          <>
+            <button 
+              onClick={shareOnWhatsApp}
+              className="bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-medium"
+            >
+              📱 Compartir WhatsApp
+            </button>
+            <button 
+              onClick={() => onQuizComplete()}
+              className="bg-gray-600 text-white py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors font-medium"
+            >
+              Nuevo Quiz
+            </button>
+          </>
+        ) : (
+          <>
+            <button 
+              onClick={restartQuiz}
+              className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+            >
+              🔄 Repetir Prueba
+            </button>
+            <button 
+              onClick={() => onQuizComplete()}
+              className="bg-gray-600 text-white py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors font-medium"
+            >
+              Cambiar Quiz
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  )
+}
 
   const preguntaActual = quizData.preguntas[currentQuestion]
 
